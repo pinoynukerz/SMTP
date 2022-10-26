@@ -19,9 +19,9 @@
  // echo $_POST['fullname'].''.$_POST['email'].''.$_POST['subject'].''.$_POST['message'];
     
     //email
-    // $mail = new PHPMailer;
-    // $mail->isSMTP();
-    // $mail->SMTPDebug = 0;
+     $mail = new PHPMailer;
+     $mail->isSMTP();
+     $mail->SMTPDebug = 0;
     // $mail->Host = 'email-smtp.us-east-1.amazonaws.com' //AWS ses 
     // $mail->Port = 465;
     // $mail->SMTPSecure = 'tls';
@@ -60,3 +60,4 @@
     <input type="submit" name="submit" />
 </form>
 </div>
+
