@@ -7,7 +7,7 @@
 //    require 'PHPMailer/src/PHPMailer.php';
 //    require 'PHPMailer/src/SMTP.php';
     
-// if(isset($_POST['submit'])){
+ if(isset($_POST['submit'])){
    
    // $name    = $_POST['fullname'];
    // $email   = $_POST['email'];
@@ -15,26 +15,26 @@
    // $message = $_POST['message'];
 
     
-   // echo '<div style="margin-top:45px margin-left:40px;margin-right:auto;">';
-    //    echo $_POST['fullname'].''.$_POST['email'].''.$_POST['subject'].''.$_POST['message'];
+   echo '<div style="margin-top:45px margin-left:40px;margin-right:auto;">';
+   echo $_POST['fullname'].''.$_POST['email'].''.$_POST['subject'].''.$_POST['message'];
     
     //email
     // $mail = new PHPMailer;
     // $mail->isSMTP();
     // $mail->SMTPDebug = 0;
     // $mail->Host = 'email-smtp.us-east-1.amazonaws.com' //AWS ses 
-   //  $mail->Port = 465;
+    // $mail->Port = 465;
     // $mail->SMTPSecure = 'tls';
     // $mail->SMTPAuth = true;
     // $mail->Username = 'AKIAVFEKWWJKOCX3NVOC';
     // $mail->Password = 'BNHBX65+DorQDmmi9T95DCei5oH6KM6M1umgyt4Pht4i';
     // $mail->setFrom('jmattz23@hotmail.com','Info');
     // $mail->addAddress($email,$name);
-    //$mail->addCC('email id','name')
+    // $mail->addCC('email id','name')
     // $mail->Subject = $subject;
     // $mail->msgHTML($message);
     // $mail->AltBody = 'HTML does not Support';
-//    $mail->addAttachment('image.jpg');
+    // $mail->addAttachment('image.jpg');
   
     // if(!$mail->send()){
     //     echo "Error".$mail->ErrorInfo;
@@ -43,10 +43,8 @@
     //     echo "Mail Sent";
     // }
     
-    // echo '</div>';
-// }
-
-
+     echo '</div>';
+ }
 ?>
 
 <html>
