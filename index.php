@@ -20,12 +20,12 @@
 
 
     //email
-     $mail = new PHPMailer;
-     $mail->isSMTP();
+     $mail = new PHPMailer(true);
+     $mail->isSMTP(true);
      $mail->SMTPDebug = 0;
-     $mail->Host = 'email-smtp.us-east-1.amazonaws.com' //AWS ses 
+     $mail->Host = 'email-smtp.us-east-1.amazonaws.com' 
      $mail->Port = 465;
-     $mail->SMTPSecure = 'tls';
+     $mail->SMTPSecure = 'ssl';
      $mail->SMTPAuth = true;
      $mail->Username = 'AKIAVFEKWWJKOCX3NVOC';
      $mail->Password = 'BNHBX65+DorQDmmi9T95DCei5oH6KM6M1umgyt4Pht4i';
