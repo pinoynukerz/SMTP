@@ -28,7 +28,7 @@
  // Replace sender@example.com with your "From" address.
  // This address must be verified with Amazon SES.
  $sender = 'jmattz23@hotmail.com';
- $senderName = 'Sender Name';
+ //$senderName = 'Sender Name';
  
  // Replace recipient@example.com with a "To" address. If your account
  // is still in the sandbox, this address must be verified.
@@ -51,21 +51,22 @@
  $port = 587;
  
  // The subject line of the email
- $subject = 'Subject Here';
+ //$subject = 'Subject Here';
  
  // The plain-text body of the email
- $bodyText =  "AWS RDS Staging Password Reset. Your AWS RDS Staging password has been reset. See attached file for your password.";
+ //$bodyText =  "AWS RDS Staging Password Reset. Your AWS RDS Staging password has been reset. See attached file for your password.";
  
  // The HTML-formatted body of the email
- $bodyHtml = 'Hi,<br /><br />
-     <p>Your AWS RDS Staging password has been reset. See attached file for your new password.</p>';
+// $bodyHtml = 'Hi,<br /><br />
+  //   <p>Your AWS RDS Staging password has been reset. See attached file for your new password.</p>';
  
  $mail = new PHPMailer(true);
  
  try {
      // Specify the SMTP settings.
      $mail->isSMTP();
-     $mail->setFrom($sender, $senderName);
+//     $mail->setFrom($sender, $senderName);
+     $mail->setFrom($sender, $name);
      $mail->Username   = $usernameSmtp;
      $mail->Password   = $passwordSmtp;
      $mail->Host       = $host;
@@ -81,8 +82,10 @@
      // Specify the content of the message.
      $mail->isHTML(true);
      $mail->Subject    = $subject;
-     $mail->Body       = $bodyHtml;
-     $mail->AltBody    = $bodyText;
+//     $mail->Body       = $bodyHtml;
+     $mail->Body       = $email;
+//     $mail->AltBody    = $bodyText;
+     $mail->AltBody    = $message;
    //  $mail->addAttachment("pass.txt.gpg", 'pass.txt.gpg');
      $mail->Send();
      echo "Email sent!" , PHP_EOL;
