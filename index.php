@@ -31,7 +31,7 @@
      $mail->Password = 'BNHBX65+DorQDmmi9T95DCei5oH6KM6M1umgyt4Pht4i';
      $mail->setFrom('jmattz23@hotmail.com','Info');
      $mail->addAddress($email,$name);
-     $mail->addCC('email id','name')
+     $mail->addCC('email id','name');
      $mail->Subject = $subject;
      $mail->msgHTML($message);
      $mail->AltBody = 'HTML does not Support';
