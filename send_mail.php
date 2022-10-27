@@ -71,7 +71,7 @@ try {
     $mail->Subject    = $subject;
     $mail->Body       = $bodyHtml;
     $mail->AltBody    = $bodyText;
-    $mail->addAttachment("pass.txt.gpg", 'pass.txt.gpg');
+   // $mail->addAttachment("pass.txt.gpg", 'pass.txt.gpg');
     $mail->Send();
     echo "Email sent!" , PHP_EOL;
 } catch (phpmailerException $e) {
