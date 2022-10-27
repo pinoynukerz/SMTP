@@ -5,6 +5,10 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+    require 'PHPMailer/src/Exception.php';
+    require 'PHPMailer/src/PHPMailer.php';
+    require 'PHPMailer/src/SMTP.php';
+
 // If necessary, modify the path in the require statement below to refer to the
 // location of your Composer autoload.php file.
 require 'vendor/autoload.php';
