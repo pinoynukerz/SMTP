@@ -27,22 +27,24 @@
      $mail->Port = 465;
      $mail->SMTPSecure = 'ssl';
      $mail->SMTPAuth = true;
-     $mail->Username = 'AKIAVFEKWWJKOCX3NVOC';
-     $mail->Password = 'BNHBX65+DorQDmmi9T95DCei5oH6KM6M1umgyt4Pht4i';
+     $mail->Username = 'AKIAVFEKWWJKDDLUBNRU';
+     $mail->Password = 'BEWEfDgnPyD6GB9nh85C0QMPsxIg1ykA8uMpGgtUdGsz';
      $mail->setFrom('jmattz23@hotmail.com','Info');
      $mail->addAddress($email,$name);
-     $mail->addCC('email id','name');
+   //$mail->addCC('email id','name');
      $mail->Subject = $subject;
      $mail->msgHTML($message);
      $mail->AltBody = 'HTML does not Support';
-   //  $mail->addAttachment('image.jpg');
-  
-    // if(!$mail->send()){
-    //     echo "Error".$mail->ErrorInfo;
+   //$mail->addAttachment('image.jpg');
+
+     
     
-    // }else{
-    //     echo "Mail Sent";
-    // }
+    if(!$mail->send()){
+      echo "Error".$mail->ErrorInfo;
+    
+     }else{
+         echo "Mail Sent";
+     }
     
      echo '</div>';
  }
