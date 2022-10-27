@@ -54,14 +54,14 @@ $mail = new PHPMailer(true);
 
 try {
     // Specify the SMTP settings.
-    $mail->isSMTP();
+    $mail->isSMTP(true);
     $mail->setFrom($sender, $senderName);
     $mail->Username   = $usernameSmtp;
     $mail->Password   = $passwordSmtp;
     $mail->Host       = $host;
     $mail->Port       = $port;
     $mail->SMTPAuth   = true;
-    $mail->SMTPSecure = 'tls';
+    $mail->SMTPSecure = 'ssl';
     //$mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
 
     // Specify the message recipients.
