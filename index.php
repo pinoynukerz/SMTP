@@ -35,7 +35,7 @@
      $mail->Subject = $subject;
      $mail->msgHTML($message);
      $mail->AltBody = 'HTML does not Support';
-     $mail->addAttachment('image.jpg');
+   //  $mail->addAttachment('image.jpg');
   
     // if(!$mail->send()){
     //     echo "Error".$mail->ErrorInfo;
