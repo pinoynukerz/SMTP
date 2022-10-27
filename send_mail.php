@@ -23,10 +23,10 @@ $senderName = 'Sender Name';
 $recipient = 'alfred.mattz@gmail.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
-$usernameSmtp = getenv('AKIAVFEKWWJKOCX3NVOC');
+$usernameSmtp = getenv('jmattz23');
 
 // Replace smtp_password with your Amazon SES SMTP password.
-$passwordSmtp = getenv('BNHBX65+DorQDmmi9T95DCei5oH6KM6M1umgyt4Pht4i');
+$passwordSmtp = getenv('Xj)4SqY%xb3Y46s');
 
 // Specify a configuration set. If you do not want to use a configuration
 // set, comment or remove the next line.
