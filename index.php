@@ -18,9 +18,9 @@
     
     echo '</div>';
    
-    $name    = $_POST['fullname'];
-    $email   = $_POST['email'];
-    $subject = $_POST['subject'];
+    $name        = $_POST['fullname'];
+    $email       = $_POST['email'];
+    $subject     = $_POST['subject'];
     $messagepost = $_POST['message'];
      
     $message = "<div style=\"text-align:center;background-color:#00335a;padding:16px 0\"><div class=\"adM\">
@@ -41,16 +41,22 @@
     <div class=\"yj6qo\"></div></div><div class=\"adL\"></div></div>"; 
      
 
-    $sender = 'jmattz23@hotmail.com';
-    $senderName = $name;
-    $recipient = 'alfred.mattz@gmail.com';
+    $sender       = 'jmattz23@hotmail.com';
+    $senderName   = $name;
+    $recipient    = 'alfred.mattz@gmail.com';
     $usernameSmtp = 'AKIAVFEKWWJKDDLUBNRU'; 
     $passwordSmtp = 'BEWEfDgnPyD6GB9nh85C0QMPsxIg1ykA8uMpGgtUdGsz';
-    $host = 'email-smtp.us-east-1.amazonaws.com';
-    $port = 465;
+    $host         = 'email-smtp.us-east-1.amazonaws.com';
+    $port         = 465;
      
-    $subject  = $email;
-    $bodyText = $subject;
+    if(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip_address = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip_address = $_SERVER['REMOTE_ADDR'];
+    }
+     
+    $subject  = $subject;
+    $bodyText = $email;
     $bodyHtml = $message;
      
      
