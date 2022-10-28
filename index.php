@@ -37,7 +37,7 @@
     </table></div></div><div style=\"padding-top:30px;text-align:center;padding-bottom:30px;font-family:'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif\">
     <div style=\"width:640px;background-color:#ffffff;margin:0 auto\">
     <p style=\"margin:0 0 10px\">Copyright © 2022 , All rights reserved.</p>
-    <p style=\"margin:0 0 10px\">You are receiving this email because you are subscribed to <a style=\"color:#00aeef;text-decoration:none\" href=\"http://condo.com.ph\" target=\"_blank\">Audiophile.Ph</a></p>
+    <p style=\"margin:0 0 10px\">The Philippines largest distributor of professional audio equipment and musical instruments. <a style=\"color:#00aeef;text-decoration:none\" href=\"https://audiophile.ph\" target=\"_blank\">Audiophile.Ph</a></p>
     <div class=\"yj6qo\"></div></div><div class=\"adL\"></div></div>"; 
      
 
