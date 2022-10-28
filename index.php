@@ -11,6 +11,12 @@
  if(isset($_POST['submit'])){
      
     $datetoday     =  date("l jS F Y g:ia"); 
+     
+    if(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip_address = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip_address = $_SERVER['REMOTE_ADDR'];
+    }
 
     echo '<div style="margin-top:45px margin-left:40px;margin-right:auto;">';
 
@@ -23,8 +29,8 @@
     $subject     = $_POST['subject'];
     $messagepost = $_POST['message'];
      
-    $message = "<div style=\"text-align:center;background-color:#00335a;padding:16px 0\"><div class=\"adM\">
-    </div><img src=\"https://www.audiophile.ph/catalog/view/theme/audiophile/image/audiophile.svg\" alt=\"logo\" class=\"CToWUd\">
+    $message = "<div style=\"text-align:center;background-color:#5a0000;padding:16px 0\"><div class=\"adM\">
+    </div><span style=\"color:FFFFFF\">AUDIOPHILE</span>
 </div><div style=\"background-color:#f6f6f6;padding:30px\"><div style=\"margin:0 auto;width:620px;background-color:#fff;border:1px solid #eee;padding:30px\">
     <table width=\"100%\" cellpadding=\"4\" cellspacing=\"0\" style=\"border-collapse:collapse;font-size:12px;font-family:verdana;\" border=\"1\" bordercolor=\"#CCCCC\">
     <tr><td bgcolor=\"#f4f4f4\" align=\"right\">Date</td><td >$datetoday</td></tr>
@@ -37,7 +43,7 @@
     </table></div></div><div style=\"padding-top:30px;text-align:center;padding-bottom:30px;font-family:'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif\">
     <div style=\"width:640px;background-color:#ffffff;margin:0 auto\">
     <p style=\"margin:0 0 10px\">Copyright © 2022 , All rights reserved.</p>
-    <p style=\"margin:0 0 10px\">The Philippines largest distributor of professional audio equipment and musical instruments. <a style=\"color:#00aeef;text-decoration:none\" href=\"https://audiophile.ph\" target=\"_blank\">Audiophile.Ph</a></p>
+    <p style=\"margin:0 0 10px\">The Philippines largest distributor of professional audio equipment and musical instruments. <a style=\"color:#ef0000;text-decoration:none\" href=\"https://audiophile.ph\" target=\"_blank\">Audiophile.Ph</a></p>
     <div class=\"yj6qo\"></div></div><div class=\"adL\"></div></div>"; 
      
 
@@ -49,11 +55,7 @@
     $host         = 'email-smtp.us-east-1.amazonaws.com';
     $port         = 465;
      
-    if(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-        $ip_address = $_SERVER['HTTP_X_FORWARDED_FOR'];
-    } else {
-        $ip_address = $_SERVER['REMOTE_ADDR'];
-    }
+
      
     $subject  = $subject;
     $bodyText = $email;
