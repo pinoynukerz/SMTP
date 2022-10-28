@@ -30,7 +30,7 @@
     $messagepost = $_POST['message'];
      
     $message = "<div style=\"text-align:center;background-color:#5a0000;padding:16px 0\"><div class=\"adM\">
-    </div><span style=\"color:FFFFFF\">AUDIOPHILE</span>
+    </div><span style=\"color: white;font-size: 18px;font-weight: 900;\">AUDIOPHILE</span>
 </div><div style=\"background-color:#f6f6f6;padding:30px\"><div style=\"margin:0 auto;width:620px;background-color:#fff;border:1px solid #eee;padding:30px\">
     <table width=\"100%\" cellpadding=\"4\" cellspacing=\"0\" style=\"border-collapse:collapse;font-size:12px;font-family:verdana;\" border=\"1\" bordercolor=\"#CCCCC\">
     <tr><td bgcolor=\"#f4f4f4\" align=\"right\">Date</td><td >$datetoday</td></tr>
@@ -38,7 +38,7 @@
     <tr><td bgcolor=\"#f4f4f4\" align=\"right\">Email</td><td > $email </td></tr>
     <tr><td bgcolor=\"#f4f4f4\" align=\"right\">Subject</td><td >$subject </td></tr>
     <tr><td bgcolor=\"#f4f4f4\" align=\"right\">IP Address</td><td > $ip_address </td></tr>
-    <tr><td bgcolor=\"#f4f4f4\" colspan=\"2\"><FONT SIZE=\"+1\" >Message was Sent via Contact us page</FONT></td></tr>
+    <tr><td bgcolor=\"#f4f4f4\" colspan=\"2\"><FONT SIZE=\"+1\" >Message sent @ Stem Ecosystem Landing Page</FONT></td></tr>
     <tr><td bgcolor=\"#f4f4f4\" valign=\"top\" align=\"right\" height=\"150\">Message</td><td valign=\"top\" > $messagepost</td></tr>
     </table></div></div><div style=\"padding-top:30px;text-align:center;padding-bottom:30px;font-family:'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif\">
     <div style=\"width:640px;background-color:#ffffff;margin:0 auto\">
