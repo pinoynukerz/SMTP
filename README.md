@@ -3,7 +3,9 @@
 all tested and working.
 
 send-mail 
-send_mail = working
+
+send_mail.php = working
 
 contact us mail
-index =  working
+
+index.php =  working
