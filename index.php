@@ -8,6 +8,12 @@
     require 'PHPMailer/src/SMTP.php';
     
  if(isset($_POST['submit'])){
+
+    echo '<div style="margin-top:45px margin-left:40px;margin-right:auto;">';
+
+    echo $_POST['fullname'].''.$_POST['email'].''.$_POST['subject'].''.$_POST['message'];
+    
+   echo '</div>';
    
     $name    = $_POST['fullname'];
     $email   = $_POST['email'];
@@ -15,16 +21,16 @@
     $message = $_POST['message'];
 
     $sender = 'jmattz23@hotmail.com';
-    $senderName = 'Sender Name';
+    $senderName = "$name";
     $recipient = 'alfred.mattz@gmail.com';
     $usernameSmtp = 'AKIAVFEKWWJKDDLUBNRU'; 
     $passwordSmtp = 'BEWEfDgnPyD6GB9nh85C0QMPsxIg1ykA8uMpGgtUdGsz';
     $host = 'email-smtp.us-east-1.amazonaws.com';
     $port = 465;
      
-    $subject  = 'Inquiry: by $email ';
-    $bodyText = '$subject';
-    $bodyHtml = '$message';
+    $subject  = 'Inquiry: by'"$email";
+    $bodyText = $subject;
+    $bodyHtml = $message;
      
      
     $mail = new PHPMailer(true);
@@ -57,11 +63,7 @@ try {
 }
      
     
-   echo '<div style="margin-top:45px margin-left:40px;margin-right:auto;">';
 
-
-    
-   echo '</div>';
  }
 ?>
 
@@ -81,4 +83,3 @@ try {
 </form>
     
 </div>
-
