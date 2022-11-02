@@ -97,23 +97,58 @@ try {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-    <title>SMTP </title>
+  <meta charset="UTF-8">
+  <title>Contact Us | Form Validation | AWS | SMTP</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-<div style="width:50%; margin-top:45px; margin-left:40px; margin-right:auto;">
+<!-- partial:index.partial.html -->
+<div class="container">
+	
+	<div class="header">
+		<h2>Contact us</h2>
+		 <p>Form Validation | AWS | SMTP</p>
+	</div>
     
-<h2>Contact Us</h2>
-<form name="myform" action="" method="POST">
-    <p>name:    <input type="text" name="fullname" /> </p>
-    <p>email:   <input type="email" name="email" /> </p>
-    <p>subject: <input type="subject" name="subject" /> </p>
-    <p>message  <textarea name="message"></textarea></p>
-                <input type="submit" name="submit" />
-</form>
-    
+<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Full Name</label>
+			<input type="text" placeholder="Full Name" id="fullname" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="Email" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		
+		<div class="form-control">
+			<label for="username">Subject</label>
+			<input type="subject" placeholder="Subject" id="subject"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Message</label><br>
+			<textarea name="enquiry" rows="10" id="enquiry"></textarea>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<button>Submit</button>
+	</form>
 </div>
-    </body>
+ 
+    
+ <script  src="./script.js"></script>
 
+</body>
 </html>
