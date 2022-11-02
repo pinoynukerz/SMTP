@@ -50,8 +50,8 @@
     $sender       = 'jmattz23@hotmail.com';
     $senderName   = $name;
     $recipient    = 'alfred.mattz@gmail.com';
-    $usernameSmtp = 'AKIAVFEKWWJKDDLUBNRU'; 
-    $passwordSmtp = 'BEWEfDgnPyD6GB9nh85C0QMPsxIg1ykA8uMpGgtUdGsz';
+    $usernameSmtp = 'XXXXXXX'; 
+    $passwordSmtp = 'XXXXXXX';
     $host         = 'email-smtp.us-east-1.amazonaws.com';
     $port         = 465;
      
