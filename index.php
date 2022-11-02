@@ -47,9 +47,9 @@
     <div class=\"yj6qo\"></div></div><div class=\"adL\"></div></div>"; 
      
 
-    $sender       = 'jmattz23@hotmail.com';
+    $sender       = 'email@hotmail.com';
     $senderName   = $name;
-    $recipient    = 'alfred.mattz@gmail.com';
+    $recipient    = 'email@gmail.com';
     $usernameSmtp = 'XXXXXXX'; 
     $passwordSmtp = 'XXXXXXX';
     $host         = 'email-smtp.us-east-1.amazonaws.com';
