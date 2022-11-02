@@ -96,14 +96,16 @@ try {
  }
 ?>
 
+<!DOCTYPE html>
 <html>
-    <head><title>SMTP </title>
+<head>
+    <title>SMTP </title>
 </head>
-
+<body>
 <div style="width:50%; margin-top:45px; margin-left:40px; margin-right:auto;">
     
 <h2>Contact Us</h2>
-<form action="" method="POST">
+<form name="myform" action="" method="POST">
     <p>name:    <input type="text" name="fullname" /> </p>
     <p>email:   <input type="email" name="email" /> </p>
     <p>subject: <input type="subject" name="subject" /> </p>
@@ -112,3 +114,6 @@ try {
 </form>
     
 </div>
+    </body>
+
+</html>
